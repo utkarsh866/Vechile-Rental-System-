@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Croissant+One&family=Hind:wght@700&family=Montserrat:wght@500&family=Oswald&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto+Mono:ital@0;1&display=swap');
+h1{
+    font-family: 'Bricolage Grotesque';
+    color: chocolate;
+}
+.usewrap{
+  background-image: url('background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  text-align: center;
+  width:100%
+}
+/*Navbar code
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 252, 252, 0.7);
+    padding: 15px 20px;
+    color: white; /* Customize the text color */
+  }
+  
+  #car-section{
+    overflow:hidden;
+  }
+  #bike-section{
+    overflow:hidden;
+  }
+
+  /*for selecting car and bike part css*/
+  
+
+
+/* Style the label */
+label {
+  display: block; /* Make it a block element to stack above the select */
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color:chocolate; /* Text color */
+  margin-bottom: 10px; /* Add some spacing below the label */
+}
+
+/* Style the select element */
+select {
+  font-family: 'Bricolage Grotesque';
+  font-size: 16px;
+  color: #333; /* Text color */
+  background-color: #f0f0f0; /* Background color */
+  padding: 10px; /* Add some padding for spacing */
+  border: 2px solid #ccc; /* Add a border for a neat look */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  cursor: pointer; /* Change cursor on hover */
+  width: 50%;/* Make it fill the parent container's width */
+  margin-bottom:30px;
+}
+/* Style the options within the select */
+select option {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-color: #fff; /* Background color for options */
+  color: #333; /* Text color for options */
+}
+
+/* Add hover effect for options */
+select option:hover {
+  background-color: #dddddd;
+  color: #555;
+}
+
+/* Style the select when it's focused */
+select:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: orangered; /* Change border color on focus */
+}
+#car-image-upload {
+  margin-bottom: 10px;
+  
+}
+#bike-image-upload{
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: whitesmoke;
+  opacity: 0.9;
+  border-color: #555;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a simple box shadow */
+}
+.social-icons{
+  list-style: none;
+  font-size: x-large;
+  display:inline-flex; 
+  align-items: center;
+  gap: 30px;
+}
+.Link{
+  list-style: none;
+}

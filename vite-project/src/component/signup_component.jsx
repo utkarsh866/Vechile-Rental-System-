@@ -47,8 +47,8 @@ export default function SignUp() {
   };
 
   return (
-    <div className="auth-wrapper">
-      <div className="auth-inner">
+    <div className="auth-wrapper custom-background">
+      <div className="auth-inner SBOX">
         <form onSubmit={handleSubmit}>
           <h3>Sign Up</h3>
           <div>

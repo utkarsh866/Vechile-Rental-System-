@@ -4,16 +4,11 @@ const cors = require("cors"); // Import the cors middleware
 const app = express();
 app.use(express.json());
 
-// Allow requests from any origin. You can configure this to only allow specific origins.
 app.use(cors());
 
 const mongoose = require("mongoose");
 const mongoUrl = "mongodb+srv://Awesome12:Awesome123@cluster0.9tdgbtc.mongodb.net/";
 mongoose.connect(mongoUrl, {
-    // useNewUrlParser: true,
-    // tls: {
-    //   protocolVersion: 'TLSv1_2', 
-    // },
     useNewUrlParser: true,
     useUnifiedTopology: true,
     tls: true, 

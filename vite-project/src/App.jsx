@@ -5,10 +5,8 @@ import Login from "./component/login_component";
 import SignUp from "./component/signup_component";
 import UserDetails from "./component/UserDetails";
 import Contact from "./component/Contact";
-// import ImageUpload from "./components/imageUpload.";
-
+import Terms from "./component/Terms";
 function App() {
-  // const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
     <Router>
       <div className="App">
@@ -23,6 +21,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/userDetails" element={<UserDetails />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Terms" element={<Terms />} />
         </Routes>
       </div>
     </Router>

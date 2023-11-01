@@ -4,37 +4,6 @@ import './login.css';
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const navigate= useNavigate()
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   console.log(email, password);
-  //   fetch("http://localhost:5000/login-user", {
-  //     method: "POST",
-  //     crossDomain: true,
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //       "Access-Control-Allow-Origin": "*",
-  //     },
-  //     body: JSON.stringify({
-  //       email,
-  //       password,
-  //     }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // navigate('/home')
-  //       console.log(data, "userRegister");
-  //       if (data.status == "ok") {
-  //         alert("login successful");
-  //         window.localStorage.setItem("token", data.data);
-  //         window.localStorage.setItem("loggedIn", true);
-
-  //         window.location.href = "./userDetails";
-  //       }
-  //     });
-  // }
   function handleSubmit(e) {
     e.preventDefault();
     console.log(email, password);
@@ -73,13 +42,13 @@ export default function Login() {
   
 
   return (
-    <div className="auth-wrapper">
-      <div className="auth-inner">
+    <div className="auth-wrapper custom-background">
+      <div className="auth-inner SBOX">
         <form onSubmit={handleSubmit}>
           <h3>Sign In</h3>
 
-          <div className="mb-3">
-            <label>Email address</label>
+          <div className="mb-3 ">
+            <label className="sign-in">Email address</label>
             <input
               type="email"
               className="form-control"
@@ -98,7 +67,7 @@ export default function Login() {
             />
           </div>
 
-          <div className="mb-3">
+          <div className="mb-3 sign-in">
             <div className="custom-control custom-checkbox">
               <input
                 type="checkbox"
